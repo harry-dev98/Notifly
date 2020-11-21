@@ -2,6 +2,9 @@
 
 buildscript {
     ext {
+        // googlePlayServicesVersion = "+"
+        // firbaseMessagingVersion = "+"
+
         buildToolsVersion = "29.0.2"
         minSdkVersion = 16
         compileSdkVersion = 29
@@ -15,6 +18,11 @@ buildscript {
         classpath("com.android.tools.build:gradle:3.5.3")
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        // If you use remote notifications
+        // Make sure you have installed setup Firebase correctly.
+        // uncomment the line below..
+        // classpath('com.google.gms:google-services:4.3.3')
     }
 }
 
